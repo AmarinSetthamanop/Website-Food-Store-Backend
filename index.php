@@ -46,6 +46,7 @@ $app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function ($
 $app->run();
 
 // ติดตั้ง Composer : composer install
+    // --> composer install --no-dev --optimize-autoloader
 
 // ตำสั่ง run server
     // --> php -S 127.0.0.1:8000 index.php
