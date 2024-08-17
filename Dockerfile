@@ -21,4 +21,4 @@ RUN composer install --no-dev --optimize-autoloader
 EXPOSE 8000
 
 # Run the Slim Framework using the built-in PHP server
-CMD ["php", "-S", "0.0.0.0:8000", "main.php"]
+CMD ["php", "-S", "0.0.0.0:8000", "index.php"]
