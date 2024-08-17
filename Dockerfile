@@ -1,6 +1,13 @@
 # Use an official PHP runtime as a parent image
 FROM php:7.4-apache
 
+# Install Composer
+RUN apt-get update && apt-get install -y \
+    curl \
+    unzip \
+    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+
 # Set the working directory
 WORKDIR /app
 
