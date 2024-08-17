@@ -8,8 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN docker-php-ext-install pdo pdo_mysql \
-    composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader
 
 # Expose port 80 to the outside world
 EXPOSE 8000
